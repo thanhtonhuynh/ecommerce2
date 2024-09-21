@@ -1,5 +1,3 @@
-export const revalidate = 0;
-
 import { getProducts } from "@/_data/products";
 import { Container } from "@/components/Container";
 import { HomeBanner } from "@/components/HomeBanner";
