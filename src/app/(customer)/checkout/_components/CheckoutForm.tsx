@@ -33,7 +33,7 @@ export function CheckoutForm({
     if (!stripe) return;
     if (!clientSecret) return;
     setPaymentSuccess(false);
-  }, [stripe]);
+  }, [stripe, clientSecret, setPaymentSuccess]);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();

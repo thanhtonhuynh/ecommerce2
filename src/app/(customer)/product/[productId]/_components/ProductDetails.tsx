@@ -49,7 +49,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
         setIsProductInCart(false);
       }
     }
-  }, [cartProducts]);
+  }, [cartProducts, product.id]);
 
   const productRating =
     product.reviews.reduce(
