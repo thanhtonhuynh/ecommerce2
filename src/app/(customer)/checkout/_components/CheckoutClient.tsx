@@ -56,7 +56,8 @@ export function CheckoutClient() {
     }
 
     setPageLoaded(true);
-  }, [cartProducts]);
+    // }, [cartProducts]);
+  }, [cartProducts, paymentIntent, setPaymentIntent, router]);
 
   if (paymentSuccess) {
     return (

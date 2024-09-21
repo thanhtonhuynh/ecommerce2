@@ -22,11 +22,11 @@ export function RatingForm({ product, user }: RatingFormProps) {
   const formRef = useRef<HTMLFormElement>(null);
   const [rating, setRating] = useState<number | null>(0);
 
-  if (!user) return null;
-
   useEffect(() => {
     setErrors(data.fieldErrors!);
   }, [data.fieldErrors]);
+
+  if (!user) return null;
 
   // Check if product has been delivered to the user
   const deliveredOrder = user.orders.find(

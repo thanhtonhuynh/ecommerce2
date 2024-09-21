@@ -20,7 +20,7 @@ export default async function Home({ searchParams }: HomeProps) {
   if (products.length === 0) {
     return (
       <div className="flex h-[50vh] w-full items-center justify-center font-medium">
-        No products found. Click "All" to clear filters.
+        No products found. Click 'All' to clear filters.
       </div>
     );
   }

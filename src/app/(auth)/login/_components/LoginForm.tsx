@@ -39,7 +39,7 @@ export function LoginForm() {
       </form>
 
       <p className="text-sm">
-        Don't have an account?{" "}
+        <span>Don't have an account? </span>
         <Link href={"/register"} className="underline">
           Sign Up
         </Link>
